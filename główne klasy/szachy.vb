@@ -49,11 +49,11 @@
             End If
         Next
     End Sub
-    Public Shared Function szukanie_krol(ByVal k As String)
+    Public Shared Function szukanie_krol(ByVal kolor As String)
         Dim a As Boolean = False
         For Each p As Object In szachownica_tab
             If IsNothing(p) = False Then
-                If p.GetType() = GetType(krol) And p.kolor = k Then
+                If p.GetType() = GetType(krol) And p.kolor = kolor Then
                     p.czy_szach(szachownica_tab)
                     If p.czy_szach(szachownica_tab) = True Then
                         a = True
@@ -64,11 +64,11 @@
         Return a
     End Function
 
-    Public Shared Sub szukanie_szach(ByVal k As String)
+    Public Shared Sub szukanie_szach(ByVal kolor As String)
         Dim a As Boolean = False
         For Each p As Object In szachownica_tab
             If IsNothing(p) = False Then
-                If p.GetType() = GetType(krol) And p.kolor = k Then
+                If p.GetType() = GetType(krol) And p.kolor = kolor Then
                     p.czy_szach(szachownica_tab)
                     If p.czy_szach(szachownica_tab) = True Then
                         a = True
