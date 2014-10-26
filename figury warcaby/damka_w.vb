@@ -2,7 +2,6 @@
     Inherits figura
     Public Sub New(ByVal x, ByVal y, ByVal kolor)
         MyBase.New(x, y, kolor)
-        'Me.obraz = "ikony_szachy\bishop_" & Me.kolor & ".png"
         If Me.kolor = "white" Then Me.obraz = My.Resources.Resource1.bishop_white
         If Me.kolor = "black" Then Me.obraz = My.Resources.Resource1.bishop_black
     End Sub

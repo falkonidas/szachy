@@ -4,7 +4,6 @@
     Public Sub New(ByVal x, ByVal y, ByVal kolor)
         MyBase.New(x, y, kolor)
         Me.pierwszy_ruch = True
-        'Me.obraz = "ikony_szachy\pawn_" & Me.kolor & ".png"
         If Me.kolor = "white" Then Me.obraz = My.Resources.Resource1.pawn_white
         If Me.kolor = "black" Then Me.obraz = My.Resources.Resource1.pawn_black
     End Sub

@@ -3,7 +3,6 @@
 
     Public Sub New(ByVal x, ByVal y, ByVal kolor)
         MyBase.New(x, y, kolor)
-        'Me.obraz = "ikony_szachy\stone_" & Me.kolor & ".png"
         If Me.kolor = "white" Then Me.obraz = My.Resources.Resource1.stone_white
         If Me.kolor = "black" Then Me.obraz = My.Resources.Resource1.stone_black
     End Sub
